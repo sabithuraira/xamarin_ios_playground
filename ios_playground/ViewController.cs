@@ -6,15 +6,15 @@ namespace ios_playground
 {
 	public partial class ViewController : UIViewController
 	{
+		public string Param1;
 		protected ViewController(IntPtr handle) : base(handle)
 		{
-			// Note: this .ctor should not contain any initialization logic.
 		}
 
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-			// Perform any additional setup after loading the view, typically from a nib.
+			this.Txt_param.Text = Param1;
 			this.Txt_Name.EditingChanged += (sender, ea) =>
 			{
 				this.Label_count.Text = "Count of character : " + ((UITextField)sender).Text.Length;

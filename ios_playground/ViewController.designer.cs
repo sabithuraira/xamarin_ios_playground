@@ -22,6 +22,10 @@ namespace ios_playground
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField Txt_Name { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel Txt_param { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (Label_count != null) {
@@ -32,6 +36,11 @@ namespace ios_playground
             if (Txt_Name != null) {
                 Txt_Name.Dispose ();
                 Txt_Name = null;
+            }
+
+            if (Txt_param != null) {
+                Txt_param.Dispose ();
+                Txt_param = null;
             }
         }
     }
