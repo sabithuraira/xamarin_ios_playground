@@ -95,10 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Components\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Components\SimpleCustomCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -114,6 +116,16 @@
     <Compile Include="WelcomeController.cs" />
     <Compile Include="WelcomeController.designer.cs">
       <DependentUpon>WelcomeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LauncController.cs" />
+    <Compile Include="LauncController.designer.cs">
+      <DependentUpon>LauncController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SimpleSource.cs" />
+    <Compile Include="Components\Player.cs" />
+    <Compile Include="Components\SimpleCustomCell.cs" />
+    <Compile Include="Components\SimpleCustomCell.designer.cs">
+      <DependentUpon>SimpleCustomCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

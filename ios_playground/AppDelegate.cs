@@ -20,7 +20,7 @@ namespace ios_playground
 		{
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
-
+			this.Window.MakeKeyAndVisible();
 			return true;
 		}
 

@@ -11,27 +11,18 @@ using UIKit;
 
 namespace ios_playground
 {
-    [Register ("WelcomeController")]
-    partial class WelcomeController
+    [Register ("LauncController")]
+    partial class LauncController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Btn_Nav { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView My_Table { get; set; }
+        UIKit.UITabBar Tabbar1 { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (Btn_Nav != null) {
-                Btn_Nav.Dispose ();
-                Btn_Nav = null;
-            }
-
-            if (My_Table != null) {
-                My_Table.Dispose ();
-                My_Table = null;
+            if (Tabbar1 != null) {
+                Tabbar1.Dispose ();
+                Tabbar1 = null;
             }
         }
     }
