@@ -96,6 +96,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Components\" />
+    <Folder Include="Helper\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -127,6 +128,19 @@
     <Compile Include="Components\SimpleCustomCell.designer.cs">
       <DependentUpon>SimpleCustomCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tab1Controller.cs" />
+    <Compile Include="Tab1Controller.designer.cs">
+      <DependentUpon>Tab1Controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab2Controller.cs" />
+    <Compile Include="Tab2Controller.designer.cs">
+      <DependentUpon>Tab2Controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabController.cs" />
+    <Compile Include="TabController.designer.cs">
+      <DependentUpon>TabController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\TabInterface.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

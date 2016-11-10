@@ -19,7 +19,7 @@ namespace ios_playground
 		{
 			Name.Text = data.Name;
 			Club.Text = data.Club;
-			Country.Text = data.Country;
+			Country.Text = "segue name :" + data.Country;
 		}
 	}
 }

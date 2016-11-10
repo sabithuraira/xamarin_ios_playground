@@ -41,13 +41,10 @@ namespace ios_playground
 			);
 			NavigationItem.RightBarButtonItem = customButton;
 
-			this.datas.Add(new Player("Christiano Ronaldo", "Real Madrid","Portuguese"));
-			this.datas.Add(new Player("Lionel Messi", "Barcelona","Argentina"));
-			this.datas.Add(new Player("Gareth Bale", "Real Madrid","Wales"));
-			this.datas.Add(new Player("Zlatan Ibrahimovic", "Manchester United","Sweden"));
-			this.datas.Add(new Player("Mesut Ozil", "Arsenal", "Germany"));
+			this.datas.Add(new Player("Dashboard", "Simple Controller","dashboard"));
+			this.datas.Add(new Player("UITabBarController", "Bar Sample","TabBar"));
 
-			this.My_Table.Source = new SimpleSource(this.datas);
+			this.My_Table.Source = new SimpleSource(this, this.datas);
 
 		}
     }

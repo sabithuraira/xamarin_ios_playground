@@ -10,10 +10,12 @@ namespace ios_playground
 	{
 		List<Player> datas;
 		NSString CellIdentifier = new NSString("Custom_Cell");
+		WelcomeController _controller;
 
-		public SimpleSource(List<Player> datas)
+		public SimpleSource(WelcomeController _controller, List<Player> datas)
 		{
 			this.datas = datas;
+			this._controller = _controller;
 		}
 
 		public override nint RowsInSection(UITableView tableview, nint section)
@@ -49,6 +51,12 @@ namespace ios_playground
 			cell.DetailTextLabel.Text = single_data.Club;
 			*/
 			return cell;
+		}
+
+		public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+		{
+			Player single_data = this.datas[indexPath.Row];
+			_controller.PerformSegue(single_data.Country, _controller);
 		}
 	}
 }
