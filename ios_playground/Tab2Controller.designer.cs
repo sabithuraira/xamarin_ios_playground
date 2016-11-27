@@ -14,16 +14,8 @@ namespace ios_playground
     [Register ("Tab2Controller")]
     partial class Tab2Controller
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel Lbl_Item { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (Lbl_Item != null) {
-                Lbl_Item.Dispose ();
-                Lbl_Item = null;
-            }
         }
     }
 }

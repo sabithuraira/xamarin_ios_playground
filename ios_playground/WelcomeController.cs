@@ -39,13 +39,13 @@ namespace ios_playground
 				 //this.Label1.Text = "Hoi";
 			 }
 			);
+
 			NavigationItem.RightBarButtonItem = customButton;
 
 			this.datas.Add(new Player("Dashboard", "Simple Controller","dashboard"));
 			this.datas.Add(new Player("UITabBarController", "Bar Sample","TabBar"));
 
 			this.My_Table.Source = new SimpleSource(this, this.datas);
-
 		}
     }
 }
