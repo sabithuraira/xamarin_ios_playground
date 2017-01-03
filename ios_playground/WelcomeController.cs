@@ -43,7 +43,8 @@ namespace ios_playground
 			NavigationItem.RightBarButtonItem = customButton;
 
 			this.datas.Add(new Player("Dashboard", "Simple Controller","dashboard"));
-			this.datas.Add(new Player("UITabBarController", "Bar Sample","TabBar"));
+			this.datas.Add(new Player("UITabBarController + UIWebView", "Bar Sample","TabBar"));
+			this.datas.Add(new Player("Expendable Table View", "Expendable", "toExpendable"));
 
 			this.My_Table.Source = new SimpleSource(this, this.datas);
 		}

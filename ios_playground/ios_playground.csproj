@@ -145,6 +145,12 @@
       <DependentUpon>TabController.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\TabInterface.cs" />
+    <Compile Include="ExpendableController.cs" />
+    <Compile Include="ExpendableController.designer.cs">
+      <DependentUpon>ExpendableController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ExpendableSource.cs" />
+    <Compile Include="Components\SoccerClubModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
