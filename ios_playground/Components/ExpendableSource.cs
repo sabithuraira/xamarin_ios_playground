@@ -86,14 +86,6 @@ namespace ios_playground
 			return view;
 		}
 
-		private UIButton HiddenButton(CGRect frame, nint tag)
-		{
-			var button = new UIButton(frame);
-			button.Tag = tag;
-			button.TouchUpInside += _buttonClick;
-			return button;
-		}
-
 		public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 		{
 			UITableViewCell cell = tableView.DequeueReusableCell(childIdentifier);

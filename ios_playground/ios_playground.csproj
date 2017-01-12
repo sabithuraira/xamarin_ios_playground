@@ -105,6 +105,7 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Components\SimpleCustomCell.xib" />
+    <InterfaceDefinition Include="Components\DynamicController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -151,6 +152,10 @@
     </Compile>
     <Compile Include="Components\ExpendableSource.cs" />
     <Compile Include="Components\SoccerClubModel.cs" />
+    <Compile Include="Components\DynamicController.cs" />
+    <Compile Include="Components\DynamicController.designer.cs">
+      <DependentUpon>DynamicController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
